@@ -1,4 +1,4 @@
-package br.com.dbserver.dbserverapi.apps;
+package br.com.dbserver.dbserverapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
