@@ -11,12 +11,12 @@ public class ServerModel {
     private String id;
     private String title;
     private String image;
-    private int number;
+    private int level;
 
-    public ServerModel(String title, String image, int number) {
+    public ServerModel(String title, String image, int level) {
         this.title = title;
         this.image = image;
-        this.number = number;
+        this.level = level;
     }
 
     public String getId() {
@@ -31,7 +31,7 @@ public class ServerModel {
         return image;
     }
 
-    public int getNumber() {
-        return number;
+    public int getLevel() {
+        return level;
     }
 }
