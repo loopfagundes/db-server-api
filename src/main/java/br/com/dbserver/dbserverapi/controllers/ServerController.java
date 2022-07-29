@@ -13,19 +13,19 @@ public class ServerController {
     @Autowired
     private ServerRepository serverRepository;
 
-    @GetMapping("/meu_api")
+    @GetMapping("/cards")
     public List<ServerModel> getServer() {
         List<ServerModel> serverModels = serverRepository.findAll();
         return serverModels;
     }
 
-    @PostMapping("/meu_api")
+    @PostMapping("/cards")
     public ServerModel cadastrarServer(@RequestBody ServerModel serverModel) {
         ServerModel serverModelSave = serverRepository.save(serverModel);
         return serverModelSave;
     }
 
-    @DeleteMapping("/meu_api/{id}")
+    @DeleteMapping("/cards/{id}")
     public void deleteCard(@PathVariable String id) {
         serverRepository.deleteById(id);
     }
