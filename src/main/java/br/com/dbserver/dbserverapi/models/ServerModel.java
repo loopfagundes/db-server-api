@@ -11,9 +11,9 @@ public class ServerModel {
     private String id;
     private String title;
     private String image;
-    private int level;
+    private String level;
 
-    public ServerModel(String title, String image, int level) {
+    public ServerModel(String title, String image, String level) {
         this.title = title;
         this.image = image;
         this.level = level;
@@ -31,7 +31,7 @@ public class ServerModel {
         return image;
     }
 
-    public int getLevel() {
+    public String getLevel() {
         return level;
     }
 }
